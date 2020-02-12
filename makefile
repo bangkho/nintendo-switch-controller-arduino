@@ -5,3 +5,5 @@ all:
 	make -f wattsfarmer.mk
 	make -f wildareabreeding.mk
 	make -f dracovish.mk
+	make -f skip-date.mk
+

@@ -126,6 +126,7 @@ USB_JoystickReport_Input_t last_report;
 int bufindex = 0;
 int duration_count = 0;
 int portsval = 0;
+int cycle = 1;
 
 // Prepare the next report for the host.
 void GetNextReport(USB_JoystickReport_Input_t* const ReportData) {
@@ -262,6 +263,7 @@ void GetNextReport(USB_JoystickReport_Input_t* const ReportData) {
 			{
 				bufindex = INPUT_REPEAT_BEGIN;
 				duration_count = 0;
+				cycle++;
 
 				state = BREATHE;
 
@@ -270,6 +272,11 @@ void GetNextReport(USB_JoystickReport_Input_t* const ReportData) {
 				ReportData->RX = STICK_CENTER;
 				ReportData->RY = STICK_CENTER;
 				ReportData->HAT = HAT_CENTER;
+			}
+
+			if(cycle == MAX_REPEAT && MAX_REPEAT != 0)
+			{
+				state = CLEANUP;
 			}
 
 			break;

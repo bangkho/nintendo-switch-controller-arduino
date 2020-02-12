@@ -1,6 +1,7 @@
 # Nintendo Switch Controller Arduino
 
 control your Nintendo Switch using an Arduino UNO R3
+Thanks to [dornbirndevelops](github.com:dornbirndevelops/nintendo-switch-controller-arduino.git) who has make this bot for Pokemon.
 
 ## Requirements
 
@@ -14,7 +15,7 @@ control your Nintendo Switch using an Arduino UNO R3
 ### 1. clone repository
 
 ```
-git clone --recursive git@github.com:dornbirndevelops/nintendo-switch-controller-arduino.git
+git clone --recursive git@github.com:bangkho/nintendo-switch-controller-arduino.git
 ```
 
 ### 2. install required packages

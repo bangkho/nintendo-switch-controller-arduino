@@ -11,23 +11,9 @@ IN_FLASH command INPUTS[] = {
 
 	// Go into game
 	{ HOME,       5 },	{ NOTHING,  100 },
-	{ HOME,       5 },	{ NOTHING,  150 },
+	{ HOME,       5 },	{ NOTHING,  100 },
 
-	// Energie strömt aus dem Pokemon-Nest!
-	{ A,          5 },	{ NOTHING,  350 },
-	// (Du erhälst 2 000 Watt!)
-	{ B,          5 },	{ NOTHING,  100 },
-	{ A,          5 },	{ NOTHING,  100 },
-	{ B,          5 },	{ NOTHING,  100 },
-	{ A,          5 },	{ NOTHING,  100 },
-	{ B,          5 },	{ NOTHING,  200 },
-
-	// Reopen dialog (this helps with the month reset)
-	{ A,       5 },			{ NOTHING,  100 },
-
-	// Mitspieler suchen
-	{ A,       5 },			{ NOTHING,  800 },
-	// One day forward
+	// Go to menu
 	{ HOME,       5 },		{ NOTHING,  100 },
 	{ DOWN,       5 },		{ NOTHING,  100 },
 	{ RIGHT,      5 },		{ NOTHING,  50 },
@@ -44,9 +30,9 @@ IN_FLASH command INPUTS[] = {
 	{ DOWN,       5 },		{ NOTHING,  50 },
 	{ DOWN,       5 },		{ NOTHING,  50 },
 	{ DOWN,       5 },		{ NOTHING,  50 },
-	{ A,          5 },		{ NOTHING,  50 },
 
 	// go to date and time setting
+	{ A,          5 },		{ NOTHING,  50 },
 	{ DOWN,       5 },		{ NOTHING,  50 },
 	{ DOWN,       5 },		{ NOTHING,  50 },
 	{ DOWN,       5 },		{ NOTHING,  50 },
@@ -58,17 +44,10 @@ IN_FLASH command INPUTS[] = {
 	{ RIGHT,      90 },		{ NOTHING,  50 },
 	{ A,          5 },		{ NOTHING,  50 },
 
-	// Go back into game
-	{ HOME,       5 },		{ NOTHING,  100 },
-	{ HOME,       5 },		{ NOTHING,  100 },
-
-	// Willst du die Suche nach Mitspielern abbrechen?
-	{ B,          5 },		{ NOTHING,  150 },
-
-	// Ja
-	{ A,          5 },		{ NOTHING,  200 },
+	{ B,       	  5 },		{ NOTHING,  100 },
 };
 
-const int INPUT_REPEAT_BEGIN = 11;
+const int INPUT_REPEAT_BEGIN = 37;
 const int INPUTS_LENGTH = sizeof(INPUTS)/sizeof(command);
-const int MAX_REPEAT = 0;
+const int MAX_REPEAT = 5;
+

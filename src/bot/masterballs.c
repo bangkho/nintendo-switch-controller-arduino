@@ -2,7 +2,7 @@
 
 const int ECHOES = 0;
 
-const command INPUTS[] = {
+IN_FLASH command INPUTS[] = {
 	// Setup controller
 						{ NOTHING,  250 },
 	{ TRIGGERS,   5 },	{ NOTHING,  150 },
@@ -87,6 +87,7 @@ const command INPUTS[] = {
 	{ A,          5 },		{ NOTHING,  100 },
 
 	// set one day forward
+	{ RIGHT,      5 },		{ NOTHING,  50 },
 	{ UP,         5 },		{ NOTHING,  50 },
 	{ RIGHT,      90 },		{ NOTHING,  50 },
 	{ A,          5 },		{ NOTHING,  50 },
@@ -97,3 +98,5 @@ const command INPUTS[] = {
 
 const int INPUT_REPEAT_BEGIN = 11;
 const int INPUTS_LENGTH = sizeof(INPUTS)/sizeof(command);
+const int MAX_REPEAT = 0;
+
